@@ -7,11 +7,11 @@ namespace BundlerMinifierVsix
 {
     static class Vsix
     {
-        public const string Id = "5783ce1f-b23d-4e84-87a4-6b2cbe9e0602";
-        public const string Name = "Bundler & Minifier";
+        public const string Id = "e497fa3e-09e8-4526-b35c-5a947798b47a";
+        public const string Name = "Bundler & Minifier netcore 2022";
         public const string Description = @"Adds support for bundling and minifying JavaScript, CSS and HTML files in any project.";
         public const string Language = "en-US";
-        public const string Version = "3.5";
+        public const string Version = "6.0";
         public const string Author = "Jason Moore";
         public const string Tags = "bundle, bundling, minify, minification, js, css, html";
     }

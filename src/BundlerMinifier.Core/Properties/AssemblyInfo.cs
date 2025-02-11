@@ -3,12 +3,12 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using BundlerMinifier;
 
-[assembly: AssemblyTitle("Bundler & Minifier")]
+[assembly: AssemblyTitle("Bundler & Minifier 2022")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mads Kristensen")]
-[assembly: AssemblyProduct("Bundler & Minifier Core")]
-[assembly: AssemblyCopyright("Copyright © 2018")]
+[assembly: AssemblyProduct("Bundler & Minifier Core 2022")]
+[assembly: AssemblyCopyright("Copyright © 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

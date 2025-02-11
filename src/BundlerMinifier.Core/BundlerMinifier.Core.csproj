@@ -1,26 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="..\common.props" />
 
   <PropertyGroup>
-    <Version>1.0.0</Version>
-    <TargetFrameworks>net48;netstandard2.0;netcoreapp3.1;net6.0;net8.0</TargetFrameworks>
+    <Version>6.0</Version>
+    <TargetFrameworks>net48;net6.0;net8.0</TargetFrameworks>
     <DefineConstants>$(DefineConstants);DOTNET</DefineConstants>
     <AssemblyName>dotnet-bundle</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>BundlerMinifier.Core</PackageId>
+    <PackageId>BundlerMinifier2022.Core</PackageId>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Authors>Mads Kristensen, Jason Moore</Authors>
-    <RepositoryUrl>https://github.com/failwyn/BundlerMinifier</RepositoryUrl>
+    <RepositoryUrl>https://github.com/adamatpinbn/BundlerMinifier2022.Core</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.Common" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
 
@@ -33,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUglify" Version="1.21.9" />
+    <PackageReference Include="NUglify" Version="1.21.11" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

@@ -3,28 +3,28 @@
   <Import Project="..\common.props" />
 
   <PropertyGroup>
-    <TargetFrameworks>net48;netstandard2.0;netcoreapp3.1;net6.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net48;net6.0;net8.0</TargetFrameworks>
     <Title>Bundler &amp; Minifier</Title>
-    <PackageId>BuildBundlerMinifier2022</PackageId>
+    <PackageId>BuildBundlerMinifier2022.Core</PackageId>
 
     <BuildOutputTargetFolder>tools</BuildOutputTargetFolder>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <!-- forces SDK to copy dependencies into build output to make packing easier -->
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-    <PackageIconUrl>https://raw.githubusercontent.com/failwyn/BundlerMinifier/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/failwyn/BundlerMinifier/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/failwyn/BundlerMinifier</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/adamatpinbn/BundlerMinifier2022.Core/master/src/BundlerMinifierVsix/Resources/icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/adamatpinbn/BundlerMinifier2022.Core/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/adamatpinbn/BundlerMinifier2022.Core</RepositoryUrl>
     <PackageTags>concat;bundle;minify;minification;css;js;html</PackageTags>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Mads Kristensen, Jason Moore</Authors>
-    <Version>2.9.11</Version>
+    <Version>6.0</Version>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'net8.0'" >
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'net8.0'">
 	  <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
 	  <OutputType>Exe</OutputType>
 	  <PackAsTool>true</PackAsTool>
@@ -32,15 +32,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Build.Framework" Version="17.4.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.4.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Build.Framework" Version="17.12.6" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.12.6" PrivateAssets="All" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="NUglify" Version="1.21.9" />
+    <PackageReference Include="NUglify" Version="1.21.11" />
   </ItemGroup>
 
   <ItemGroup>

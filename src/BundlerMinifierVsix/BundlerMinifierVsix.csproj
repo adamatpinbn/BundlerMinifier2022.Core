@@ -128,6 +128,7 @@
     <Content Include="Resources\Files\package.json">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <None Include=".editorconfig" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
       <Generator>VsixManifestGenerator</Generator>
@@ -198,14 +199,17 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MessagePack">
+      <Version>3.1.3</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.SDK">
-      <Version>17.0.31902.203</Version>
+      <Version>17.12.40392</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Utilities">
-      <Version>17.0.31723.112</Version>
+      <Version>17.12.40391</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.VSSDK.BuildTools">
-      <Version>17.5.4065</Version>
+      <Version>17.12.2069</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -213,10 +217,10 @@
       <Version>13.0.3</Version>
     </PackageReference>
     <PackageReference Include="NuGet.VisualStudio">
-      <Version>17.4.0</Version>
+      <Version>17.12.1</Version>
     </PackageReference>
     <PackageReference Include="NUglify">
-      <Version>1.21.9</Version>
+      <Version>1.21.11</Version>
     </PackageReference>
   </ItemGroup>
   <!-- end workaround -->

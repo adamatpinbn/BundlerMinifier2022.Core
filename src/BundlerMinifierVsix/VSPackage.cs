@@ -6,14 +6,15 @@
 namespace BundlerMinifierVsix
 {
     using System;
-    
+    using System.Runtime.InteropServices;
+
     /// <summary>
     /// Helper class that exposes all GUIDs used across VS Package.
     /// </summary>
     internal sealed partial class PackageGuids
     {
-        public const string guidBundlerPackageString = "c7347762-e60a-4407-bb9d-d76fc1fe09b5";
-        public const string guidBundlerCmdSetString = "7b10be0c-81e1-4817-abda-e08788679bd5";
+        public const string guidBundlerPackageString = "f80c4895-89aa-4958-a5bc-fd4dbc5fd3ec";
+        public const string guidBundlerCmdSetString = "98902516-9aed-44fb-93fe-8d17e10fa5e8";
         public static Guid guidBundlerPackage = new Guid(guidBundlerPackageString);
         public static Guid guidBundlerCmdSet = new Guid(guidBundlerCmdSetString);
     }
